@@ -718,7 +718,8 @@ def default_wasm_jspi(
         "aarch64",
         "arm",
         "loongarch64",
-        "mips64",
+# AOSCOS: Disable JSPI for Fx147 to work around Bug 2010439.
+#       "mips64",
         "riscv64",
     ):
         return True
